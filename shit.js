@@ -1,5 +1,5 @@
 var tumblrAutoPager = {
-  url: 'http://tumblings.net/post/37900254946/endlessscrollingtumblrcode',
+  url: 'https://tumblings.net/post/37900254946/endlessscrollingtumblrcode',
   ver: '5.0.2',
   rF: true,
   gP: {
@@ -20,7 +20,7 @@ var tumblrAutoPager = {
     } else if (lht != - 1) {
       tAP.LN = lh.slice(7);
       if (tAP.LN.slice(tAP.LN.length - 1) == '/') tAP.LN = tAP.LN.slice(0, tAP.LN.length - 1);
-    } else if ('http://' + tAP.LN + '/' != lh) {
+    } else if ('https://' + tAP.LN + '/' != lh) {
       return;
     };
     var gPFncs = [
@@ -96,7 +96,7 @@ var tumblrAutoPager = {
     }
     sendRequest.README = {
       license: 'Public Domain',
-      url: 'http://jsgt.org/lib/ajax/ref.htm',
+      url: 'https://jsgt.org/lib/ajax/ref.htm',
       version: 0.516,
       author: 'Toshiro Takahashi'
     };
@@ -242,7 +242,7 @@ var tumblrAutoPager = {
       if (r < d.clientHeight * 2 && tAP.rF) {
         tAP.rF = false;
         p++;
-        sendRequest(addNextPage, '', 'GET', 'http://' + tAP.LN + '/page/' + p, true);
+        sendRequest(addNextPage, '', 'GET', 'https://' + tAP.LN + '/page/' + p, true);
       }
       setTimeout(arguments.callee, 200);
     };
